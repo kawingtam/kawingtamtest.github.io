@@ -1,5 +1,7 @@
 //script.js
 // Get elements
+function startQuiz() {
+    console.log("startQuiz function called");
 const homepageContainer = document.getElementById("homepage-container");
 const usernameInput = document.getElementById("username");
 const startButton = document.getElementById("start-btn");
@@ -176,3 +178,9 @@ function showResult() {
     quizContainer.style.display = "none";
     resultElement.textContent = `You scored ${score} out of ${quizData.length}.`;
 }
+}
+
+startButton.addEventListener("click", function() {
+    console.log("Start button clicked");
+    startQuiz();
+});
