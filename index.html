@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US Presidents Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz Homepage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the US Presidents Quiz</h1>
-        <div id="home-container">
-            <label for="username">Enter your name:</label>
-            <input type="text" id="username">
-            <button id="start-btn">Start Quiz</button>
-        </div>
+    <div id="homepage-container">
+        <h1>Welcome to the Quiz</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button id="start-btn">Start Quiz</button>
         <div id="quiz-container" style="display: none;">
-            <p id="question-text"></p>
-            <ul id="options-list"></ul>
-            <button id="next-btn">Next</button>
-        </div>
-        <div id="result-container" style="display: none;">
-            <p id="result-text"></p>
-            <button id="restart-btn">Start Over</button>
+            <h2>Welcome <span id="username-placeholder"></span>!</h2>
+            <div id="question"></div>
+            <div id="options"></div>
+            <button id="submit-btn">Next</button>
+            <div id="result"></div>
         </div>
     </div>
     <script src="script.js"></script>
