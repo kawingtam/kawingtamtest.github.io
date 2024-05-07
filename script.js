@@ -1,7 +1,4 @@
-//script.js
 // Get elements
-function startQuiz() {
-    console.log("startQuiz function called");
 const homepageContainer = document.getElementById("homepage-container");
 const usernameInput = document.getElementById("username");
 const startButton = document.getElementById("start-btn");
@@ -11,9 +8,6 @@ const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const resultElement = document.getElementById("result");
 const submitButton = document.getElementById("submit-btn");
-
-// Event listener for start button click
-startButton.addEventListener("click", startQuiz);
 
 // Quiz data
 const quizData = [
@@ -119,7 +113,6 @@ const quizData = [
     }
 ];
 
-
 // Variable to track current question and score
 let currentQuestion = 0;
 let score = 0;
@@ -178,9 +171,6 @@ function showResult() {
     quizContainer.style.display = "none";
     resultElement.textContent = `You scored ${score} out of ${quizData.length}.`;
 }
-}
 
-startButton.addEventListener("click", function() {
-    console.log("Start button clicked");
-    startQuiz();
-});
+// Event listener for start button click
+startButton.addEventListener("click", startQuiz);
